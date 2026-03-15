@@ -11,7 +11,7 @@ A modern, high-performance Full Stack Task Management application built with the
 -   ** Smart search & Sort**: Quickly find projects and sort them by deadline, name, or creation date.
 -   ** Premium UI**: Modern aesthetic with dark mode, glassmorphism cards, and responsive layouts.
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Frontend
 -   **React.js** (v19)
@@ -25,7 +25,7 @@ A modern, high-performance Full Stack Task Management application built with the
 -   **JSON Web Tokens (JWT)** for security
 -   **Bcrypt.js** for password encryption
 
-## 🏁 Getting Started
+##  Getting Started
 
 To run this project locally:
 
