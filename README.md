@@ -1,15 +1,15 @@
-# 🚀 Task Manager Pro - Full Stack Workspace
+#  Task Manager Pro - Full Stack Workspace
 
 A modern, high-performance Full Stack Task Management application built with the MERN stack. Designed for productivity with a sleek "Glassmorphism" UI and robust project grouping.
 
-## ✨ Key Features
+##  Key Features
 
--   **🔐 Secure Authentication**: JWT-based login and registration with hashed passwords.
--   **📁 Project Management**: Create, edit, and delete projects to group related tasks.
--   **✅ Task Tracking**: Manage tasks within projects with status (Pending, In Progress, Done) and priority (Low, Medium, High).
--   **📅 Deadlines & Overdue Alerts**: Visual indicators for nearest deadlines and overdue tasks.
--   **🔍 Smart search & Sort**: Quickly find projects and sort them by deadline, name, or creation date.
--   **🎨 Premium UI**: Modern aesthetic with dark mode, glassmorphism cards, and responsive layouts.
+-   ** Secure Authentication**: JWT-based login and registration with hashed passwords.
+-   ** Project Management**: Create, edit, and delete projects to group related tasks.
+-   ** Task Tracking**: Manage tasks within projects with status (Pending, In Progress, Done) and priority (Low, Medium, High).
+-   ** Deadlines & Overdue Alerts**: Visual indicators for nearest deadlines and overdue tasks.
+-   ** Smart search & Sort**: Quickly find projects and sort them by deadline, name, or creation date.
+-   ** Premium UI**: Modern aesthetic with dark mode, glassmorphism cards, and responsive layouts.
 
 ## 🛠️ Technology Stack
 
@@ -58,7 +58,7 @@ npm install
 npm start
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 The project is optimized for deployment on **Render**:
 -   **Backend**: Deployed as a Web Service.
@@ -66,4 +66,3 @@ The project is optimized for deployment on **Render**:
 
 ---
 
-Built with ❤️ by [Mohamed Ehab](https://github.com/mohamedehab1717)
