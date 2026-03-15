@@ -19,7 +19,7 @@ export default function AddTask({ projectId, fetchTasks, onSuccess }) {
         deadline: deadline || undefined 
       };
       
-      await API.post("/tasks", taskData);
+      await API.post("/api/tasks", taskData);
       setTitle("");
       setDescription("");
       setPriority("Medium");

@@ -10,7 +10,7 @@ export default function Dashboard() {
 
   const fetchProjects = async () => {
     try {
-      const res = await API.get("/projects");
+      const res = await API.get("/api/projects");
       setProjects(res.data);
     } catch (err) {
       console.error(err);

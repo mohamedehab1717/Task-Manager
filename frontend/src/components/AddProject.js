@@ -10,7 +10,7 @@ export default function AddProject({ fetchProjects }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await API.post("/projects", { title, description, deadline: deadline || undefined });
+      await API.post("/api/projects", { title, description, deadline: deadline || undefined });
       setTitle("");
       setDescription("");
       setDeadline("");

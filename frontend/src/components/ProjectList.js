@@ -31,7 +31,7 @@ function ProjectItem({ project, fetchProjects }) {
 
   const fetchTasks = useCallback(async () => {
     try {
-      const res = await API.get(`/tasks/${project._id}`);
+      const res = await API.get(`/api/tasks/${project._id}`);
       setTasks(res.data);
     } catch (err) {
       console.error(err);
@@ -78,7 +78,7 @@ function ProjectItem({ project, fetchProjects }) {
   const handleDeleteProject = async () => {
     if (window.confirm("Are you sure you want to delete this project?")) {
       try {
-        await API.delete(`/projects/${project._id}`);
+        await API.delete(`/api/projects/${project._id}`);
         fetchProjects();
       } catch (err) {
         console.error(err);
@@ -89,7 +89,7 @@ function ProjectItem({ project, fetchProjects }) {
   const handleUpdateProject = async (e) => {
     e.preventDefault();
     try {
-      await API.put(`/projects/${project._id}`, { title: editTitle, description: editDescription });
+      await API.put(`/api/projects/${project._id}`, { title: editTitle, description: editDescription });
       setIsEditing(false);
       fetchProjects();
     } catch (err) {
@@ -185,7 +185,7 @@ function TaskItem({ task, fetchTasks }) {
 
   const handleStatusChange = async (newStatus) => {
     try {
-      await API.put(`/tasks/${task._id}`, { status: newStatus });
+      await API.put(`/api/tasks/${task._id}`, { status: newStatus });
       fetchTasks();
     } catch (err) {
       console.error(err);
@@ -207,7 +207,7 @@ function TaskItem({ task, fetchTasks }) {
         priority: editPriority, 
         deadline: editDeadline || undefined 
       };
-      await API.put(`/tasks/${task._id}`, taskData);
+      await API.put(`/api/tasks/${task._id}`, taskData);
       setIsEditing(false);
       fetchTasks();
     } catch (err) {
@@ -218,7 +218,7 @@ function TaskItem({ task, fetchTasks }) {
 
   const handleDeleteTask = async () => {
     try {
-      await API.delete(`/tasks/${task._id}`);
+      await API.delete(`/api/tasks/${task._id}`);
       fetchTasks();
     } catch (err) {
       console.error(err);
